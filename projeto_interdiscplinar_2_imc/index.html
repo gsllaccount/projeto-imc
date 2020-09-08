@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/4c7fa9406f.js" crossorigin="anonymous"></script>
+    <title>Calcule o seu IMC</title>
+</head>
+<body>
+    <div class="menuResultado">
+        <h1>IMC</h1>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <button id="btnClose"><i class="fas fa-times"></i></button>
+    </div>
+    <h1 id="tituloPrincipal">Calcule o seu IMC</h1>
+    <div class="corpo">
+        <form action="index.html" method="GET">
+                <input id="inputNome" type="text" maxlength="30" placeholder="nome">
+                <input id="inputIdade" type="number" min="0" placeholder="idade">
+                <input id="inputPeso" type="number" min="0" placeholder="peso">
+                <input id="inputAltura" type="number" min="0" placeholder="altura">
+                <div class="btn">
+                    <button id="btnCalcular">Calcular</button>
+                </div>
+            <p>
+                Insira o seu e-mail para receber dicas de dieta
+                de acordo com o seu IMC
+            </p>
+        <input id="inputEmail" type="email" placeholder="email">
+        <button id="btnReceber">Receber Dieta</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
